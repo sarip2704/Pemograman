@@ -1,0 +1,25 @@
+program bab2;
+uses wincrt;
+var
+ a,b,c,terbesar : integer;
+begin
+writeln ('Nama     : Saripudin');
+writeln ('Fakultas : Teknik Informatika');
+writeln ('Prodi    : TI');
+writeLn ('Tugas    : Pekan 3');
+writeln ('Program  : "Mencari nilai terbesar"');
+writeln;
+write('masukkan nilai a = ');readln (a);
+write('masukkan nilai b = ');readln (b);
+write('masukkan nilai c = ');readln (c);
+terbesar:=0;
+if (a>b)then
+terbesar:=a
+else
+terbesar:=b;
+if (terbesar<c) then
+write ('maka nilai terbesar = ',+ c)
+else
+write('maka nilai terbesar = ',+ terbesar);
+readkey;
+end.
