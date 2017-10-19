@@ -1,0 +1,17 @@
+uses wincrt;
+var
+i,b,c,d: real;
+begin
+i:=3.0;
+b:=2.0;
+c:=0.0;
+i:=i+i;
+b:=b+i;
+c:=c*i;
+write('Nilai i=',i,' b=',b,' c=',c);
+end.
+
+* Tampilan akhir dari program soal di atas,,
+   i=6.000000000000000000E+000  b=8.000000000000000000E+000  c=0.000000000000000000E+000
+   
+* Untuk merapihkan jumlah nilai 0 dibelakang koma pakai ...:5:2
