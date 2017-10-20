@@ -1,9 +1,9 @@
 uses crt;
 var
-namakaryawan,nikah,belum,status : String;
+namakaryawan,status : String;
 gol : char;
 gajipokok,potonganiuran,tunjangan: real;
-prosentase,gajibersih :real;
+gajibersih :real;
 begin
 writeln ('Nama     : Saripudin');
 writeln ('Fakultas : Teknik Informatika');
