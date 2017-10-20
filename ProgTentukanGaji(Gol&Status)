@@ -32,10 +32,10 @@ if (status='Belum') or(status='belum') and (gol='B')then
 tunjangan:=60000;
 writeln();
 write ('Tunjangan           : ',tunjangan:5:2);
-if (gajipokok<300000) then
+if (gajipokok<=300000) then
 potonganiuran:=(gajipokok+tunjangan)*0.05
 else
-if (gajipokok>=300000) then
+if (gajipokok>300000) then
 potonganiuran:=(gajipokok+tunjangan)*0.1;
 writeln();
 write ('Potongan Iuran      : ',potonganiuran:5:2);
