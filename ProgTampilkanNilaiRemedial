@@ -14,23 +14,23 @@ writeln();
 writeln();
 writeln('===================================');
 write('Alpro      : ');readln(b);
-if b<z then
+if b<=z then
 a:='Alpro,' ;
 write('SBO        : ');readln(c);
-if c<z then
+if c<=z then
 i:='SBO,';
 write('RTI        : ');readln(d);
-if d<z then
+if d<=z then
 u:= 'RTI,';
 write('B.Indonesia: ');readln(f);
-if f<z then
+if f<=z then
 e:= 'B.Indonesia,' ;
 write('Pancasila  : ');readln(g);
-if  g<z then
+if  g<=z then
 o:='Pancasila.';
 if (a<>'Alpro,') and (i<>'SBO,') and (u<>'RTI,') and (e<>'B.Indonesia,')and (o<>'Pancasila') then
 writeln('Anda tidak mendapat remidial') else
-writeln('Anda mendapat remidial:', a,i,u,e,o) ;
+writeln('Anda mendapat remidial : ', a,i,u,e,o) ;
 writeln('===================================');
 readkey;
 end.
