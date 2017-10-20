@@ -1,6 +1,6 @@
 uses crt;
 var
-namakaryawan,status : String;
+status : String;
 gol : char;
 gajipokok,potonganiuran,tunjangan: real;
 gajibersih :real;
@@ -12,7 +12,7 @@ writeLn ('Tugas    : Pekan 3-BAB2');
 writeln ('Program  : "Menentukan Gaji Karyawan"');
 writeln ('-------------------------------------');
 writeln ('-------------------------------------');
-write ('nama karyawan       : ');readln(namakaryawan);
+write ('nama karyawan       : ');readln();
 write ('Golongan A/B        : ');readln(gol);
 Case gol of
  'A','a': gajipokok:=200000;
