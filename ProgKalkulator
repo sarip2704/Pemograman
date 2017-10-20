@@ -19,7 +19,6 @@ case gol of
 '-': hasil:= a - b ;
 'x': hasil:= a * b ;
 ':': hasil:= a / b ;
-    
 end;
 writeln('Hasil          : ',hasil:5:2);
 writeln('===================================');
