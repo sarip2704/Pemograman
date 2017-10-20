@@ -4,7 +4,7 @@ uses crt;
 
 var
 s,sa : char;
-HN,BD,HA,HD,BY,KB: real;
+HN,HD,BY,KB: real;
 a,a1: boolean;
 
 begin
