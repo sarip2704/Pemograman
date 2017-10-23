@@ -28,7 +28,7 @@ e:= 'B.Indonesia,' ;
 write('Pancasila  : ');readln(g);
 if  g<=z then
 o:='Pancasila.';
-if (a<>'Alpro,') and (i<>'SBO,') and (u<>'RTI,') and (e<>'B.Indonesia,')and (o<>'Pancasila') then
+if (a<>'Alpro,') and (i<>'SBO,') and (u<>'RTI,') and (e<>'B.Indonesia,')and (o<>'Pancasila.') then
 writeln('Anda tidak mendapat remidial') else
 writeln('Anda mendapat remidial : ', a,i,u,e,o) ;
 writeln('===================================');
