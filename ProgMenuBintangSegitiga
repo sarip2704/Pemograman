@@ -1,0 +1,98 @@
+uses crt;
+var
+x,y,z,pilih,N : integer;
+d: char;
+begin
+writeln('Nama  : Saripudin');
+writeln('Prodi : Teknik Informatika');
+writeln('Tugas : Menu Bintang Segitiga');
+writeln('Waktu : Rabu 2017,10,09');
+writeln('Dosen : Pa Cecep');
+writeln();
+writeln();
+writeln('========================================');
+writeln('========================================');
+repeat
+ writeln('=================MENU===================');
+ writeln('1.Segitiga Bintang Rata Kanan');
+ writeln('2.Segitiga Bintang Rata Kiri');
+ writeln('3.Segitiga Bintang Rata Tengah');
+ writeln('4.Segitiga Pascal');
+ writeln('0.Keluar Program');
+ write('Pilih nomor : ');readln(pilih);
+  case pilih of
+  1 : begin
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write('*');
+    end;
+    writeln();
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+    if d='N' then 
+    break
+    end;
+  2 : begin
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to x do
+    write('*');
+    writeln();
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+    if d='N' then 
+    break
+    end;
+  3 : begin
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write('* ');
+    end;
+    writeln;
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+    if d='N' then 
+    break
+    end;
+  4 : begin
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write(y,' ');
+    end;
+    writeln;
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+    if d='N' then 
+    break
+    end;
+    else
+    write('Program keluar');
+    end;
+ until(pilih=0)
+ end.
