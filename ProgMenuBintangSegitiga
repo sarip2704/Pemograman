@@ -22,6 +22,7 @@ repeat
  write('Pilih nomor : ');readln(pilih);
   case pilih of
   1 : begin
+   repeat
     write('Masukkan jumlah bintangnya = ');readln(z);
     if z>=3 then
     for x:=1 to z do
@@ -37,10 +38,10 @@ repeat
     writeln();
     end;
     write('Kembali ke menu Y/N : ');readln(d);
-    if d='N' then 
-    break
-    end;
+   until (d='Y')
+      end;
   2 : begin
+   repeat
     write('Masukkan jumlah bintangnya = ');readln(z);
     if z>=3 then
     for x:=1 to z do
@@ -50,14 +51,55 @@ repeat
     writeln();
     end;
     write('Kembali ke menu Y/N : ');readln(d);
-    if d='N' then 
-    break
-    end;
+   until(d='Y')
+      end;
   3 : begin
+   repeat
     write('Masukkan jumlah bintangnya = ');readln(z);
     if z>=3 then
     for x:=1 to z do
     begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write('* ');
+    end;
+    writeln;
+       end;
+    write('Kembali ke menu Y/N : ');readln(d);
+   until (d= 'Y')
+    end;
+  4 : begin
+   repeat
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write(y,' ');
+    end;
+    writeln;
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+   until (d='Y');
+    end;
+    else
+    writeln();
+    writeln();
+    writeln('Program keluar');
+    writeln(' Terima Kasih ');
+    end;
+ until(pilih=0)
+ end.
+
     for y:=1 to z-x do
     begin
     write (' ');
