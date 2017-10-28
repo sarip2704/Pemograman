@@ -6,7 +6,7 @@ begin
 writeln('Nama  : Saripudin');
 writeln('Prodi : Teknik Informatika');
 writeln('Tugas : Menu Bintang Segitiga');
-writeln('Waktu : Rabu 2017,10,09');
+writeln('Waktu : Rabu 2017,10,23');
 writeln('Dosen : Pa Cecep');
 writeln();
 writeln();
