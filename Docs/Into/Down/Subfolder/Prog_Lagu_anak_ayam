@@ -1,0 +1,35 @@
+uses wincrt;
+var
+    a:Integer;
+begin
+    a:=10;
+    writeln('Nama            : Saripudin');
+    writeln('Prodi           : FTI');
+    writeln('Program         : Lagu Anak Ayam');
+    writeln('Deskripsi       : Tidak ada inputan untuk user, hanya tampilan output');
+    writeln('====================');
+    writeln('====================');
+    writeln('Anak ayam turunlah ',a);
+    writeln('Mati satu Tinggal  ',a-1);
+    writeln('Anak ayam turunlah ',a-1);
+    writeln('Mati satu Tinggal  ',a-2);
+    writeln('Anak ayam turunlah ',a-2);
+    writeln('Mati satu Tinggal  ',a-3);
+    writeln('Anak ayam turunlah ',a-3);
+    writeln('Mati satu Tinggal  ',a-4);
+    writeln('Anak ayam turunlah ',a-4);
+    writeln('Mati satu Tinggal  ',a-5);
+    writeln('Anak ayam turunlah ',a-5);
+    writeln('Mati satu Tinggal  ',a-6);
+    writeln('Anak ayam turunlah ',a-6);
+    writeln('Mati satu Tinggal  ',a-7);
+    writeln('Anak ayam turunlah ',a-7);
+    writeln('Mati satu Tinggal  ',a-8);
+    writeln('Anak ayam turunlah ',a-8);
+    writeln('Mati satu Tinggal  ',a-9);
+    writeln('Anak ayam turunlah ',a-9);
+    writeln('Mati satu Tinggal Induknya');
+    writeln('====================');
+    writeln('====================');
+    readkey;
+end.
