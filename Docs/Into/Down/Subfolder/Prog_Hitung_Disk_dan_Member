@@ -1,0 +1,44 @@
+program tipe_boolean;
+
+uses crt;
+
+var
+s,sa : char;
+HN,HD,BY,KB: real;
+a,a1: boolean;
+
+begin
+clrscr;
+writeln('Nama  : Saripudin');
+writeln('Prodi : Teknik Informatika');
+writeln('Tugas : Mencetak harga berdasarkan diskon dan member');
+writeln('Waktu : Rabu 2017,10,09');
+writeln('Dosen : Pa Cecep');
+writeln();
+writeln();
+writeln('========================================');
+writeln('========================================');
+Write('                          Harga baju : Rp.');readln(HN);
+write('      Diskon ketik y(ya) or n(tidak) : ');readln(sa);
+a:= 'y' = (sa) ;
+WriteLn('                              Diskon : ',a);
+Write('Check member ketik y(ya) or n(bukan) : ');readln(s);
+a1:= 'y' = (s) ;
+writeln('                        Check Member : ',a1);
+if a then
+if a1 then
+HD:= HN-(HN * 25/100) 
+else
+HD:=HN-(HN*20/100)
+else
+HD:=HN;
+     
+WriteLn('                Harga setelah diskon : Rp.',HD:5:2);
+write('                               Bayar : Rp.');readln(BY);
+KB:= BY - HD ;
+writeln('                           Kembalian : Rp.',KB:5:2);
+writeln('========================================');
+writeln('========================================');
+writeln('<<<<<<<< Selamat belanja kembali >>>>>>>');
+readkey;
+end.
