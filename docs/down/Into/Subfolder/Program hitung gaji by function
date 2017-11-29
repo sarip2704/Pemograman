@@ -1,0 +1,63 @@
+program procedure_function_tgs2;
+uses crt;
+procedure input(var nama:string  ;var gol: char;var status :string);
+begin
+write('Nama   : '); readln(nama);
+write('Status : '); ReadLn(status);
+write('Gol    : '); ReadLn(gol);
+end;
+  procedure cetak(gol :char ; status :string);
+  begin
+  readln(gol);
+  Readln(status);
+  end;
+   
+function gapok(gol: char):real;
+   begin
+   Case gol of
+   'a' :gapok:= 200000;
+   'b' :gapok:= 350000;
+   end;
+   end;
+function tunjangan(gol: char; status: string):real;
+   begin
+   if (gol = 'a') and (status ='sudah') then
+   tunjangan:= 50000;
+   if (gol = 'a') and (status ='belum') then
+   tunjangan:= 25000;
+   if (gol = 'b') and (status ='sudah') then
+   tunjangan := 75000;
+   if (gol = 'b') and (status ='belum') then
+   tunjangan := 60000;
+   end;
+
+function prosentase(gapok2:real;tunja:real):real;
+   var tunjangan,gapok :real;
+   begin
+   gapok2 := gapok;
+   tunja := tunjangan;
+   if gapok2 <= 300000 then
+   prosentase:= 0.05;
+   if gapok2 > 300000 then
+   prosentase:= 0.1;
+   end;
+
+function potongan_iuran(gapok2:real;tunja:real;prosen:real):real; 
+   begin
+   potongan_iuran := (gapok2 + tunja)* prosen;
+   end;
+var
+prosen : real;
+tunja:real;
+gapok2:real;
+nama,status:string;
+gol :char;
+begin
+
+
+input(nama,gol,status);
+//cetak(gol,status);
+writeln('gaji : ',gapok(gol));
+writeln('tjangan : ',tunjangan(gol,status));
+write('Potongan iuran : ',potongan_iuran(gapok2,tunja,prosen));
+end.
