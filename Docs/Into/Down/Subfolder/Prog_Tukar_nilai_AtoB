@@ -1,0 +1,21 @@
+program bab2;
+uses wincrt;
+var
+ a,b,c: integer;
+begin
+writeln ('Nama     : Saripudin');
+writeln ('Fakultas : Teknik Informatika');
+writeln ('Prodi    : TI');
+writeLn ('Tugas    : Pekan 3');
+writeln ('Program  : "Menukar nilai a ke b dan b ke a "');
+writeln;
+write('masukan nilai a = ');readln (a);
+write('masukkan nilai b = ');readln (b);
+c := a ;
+a := b ;
+b := c ;
+write('maka nilai a = ', +a ,' dan nilai b = ', +b);
+writeln;
+write('alhamdulillah');
+readkey;
+end.
