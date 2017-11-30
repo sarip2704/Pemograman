@@ -1,0 +1,48 @@
+uses crt;
+var
+status : String;
+gol : char;
+gajipokok,potonganiuran,tunjangan,gajibersih: real;
+begin
+writeln ('Nama     : Saripudin');
+writeln ('Fakultas : Teknik Informatika');
+writeln ('Prodi    : TI');
+writeLn ('Tugas    : Pekan 3-BAB2');
+writeln ('Program  : "Menentukan Gaji Karyawan"');
+writeln ('-------------------------------------');
+writeln ('-------------------------------------');
+write ('nama karyawan       : ');readln();
+write ('Golongan A/B        : ');readln(gol);
+Case gol of
+ 'A','a': gajipokok:=200000;
+ 'B','b': gajipokok:=350000;
+ end;
+write ('Status Nikah /Belum : ');readln(status);
+write ('Gaji pokok          : ',gajipokok:5:2);
+if (status='Nikah' ) or (status='nikah') and (gol='A')then
+tunjangan:=50000
+ else
+if (status='Belum') or(status ='belum') and (gol='A')then
+tunjangan:=25000
+else
+if (status='Nikah') or(status='nikah') and (gol='B')then
+tunjangan:=75000
+else
+if (status='Belum') or(status='belum') and (gol='B')then
+tunjangan:=60000;
+writeln();
+write ('Tunjangan           : ',tunjangan:5:2);
+if (gajipokok<=300000) then
+potonganiuran:=(gajipokok+tunjangan)*0.05
+else
+if (gajipokok>300000) then
+potonganiuran:=(gajipokok+tunjangan)*0.1;
+writeln();
+write ('Potongan Iuran      : ',potonganiuran:5:2);
+writeln();
+gajibersih:=gajipokok+tunjangan-potonganiuran;
+writeln ('Gaji bersih         : ',gajibersih:5:2);
+writeln ('-------------------------------------');
+writeln ('-------------------------------------');
+readkey;
+end.
