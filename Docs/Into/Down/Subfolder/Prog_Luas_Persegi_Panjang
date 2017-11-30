@@ -1,0 +1,20 @@
+program tugas3rumuspersegipanjang;
+uses crt;
+var
+panjang,lebar,luas: real;
+satuan_luas : string;
+begin
+clrscr;
+writeln('Nama : Saripudin');
+writeln('Prodi: TFI');
+writeln('Tugas3....pekan2');
+writeln('<<<<<<<<>>>>>>>>');
+writeln('Rumus persegi panjang');
+writeln;
+write('Masukkan nilai panjang : ');readln(panjang);
+write('Masukkan nilai lebar : ');readln(lebar);
+luas := panjang*lebar;
+writeln;
+WriteLn('luas persegi panjang=',luas:0:2,'satuan_luas');
+readkey;
+end.
