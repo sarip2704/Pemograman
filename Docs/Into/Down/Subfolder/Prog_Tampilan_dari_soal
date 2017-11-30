@@ -1,0 +1,39 @@
+Membuat program yang menampilkan tampilan dibawah  :
+
+Masukkan nilai i : 1
+Masukkan nilai j : 2
+----------------------------
+| operasi | hasil operasi |
+----------------------------
+| 1 + 2 | 3 |
+| 1 - 2 | -1 |
+| 1 * 2 | 2 |
+| 1 div 2 | 0 |
+| 1 mod 2 | 1 |
+----------------------------
+
+Programnya adalah sebagai berikut;
+
+program tugas2;
+uses crt;
+var
+i,j :integer;
+begin
+i:=1;j:=2;
+writeln('Nama : Saripudin');
+writeln('Prodi: TFI');
+writeln('Tugas2....pekan2');
+writeln('<<<<<<<<>>>>>>>>');
+writeln('masukkan nilai i = 1');
+Writeln('masukkan nilai j = 2');
+writeln('---------------------------');
+writeln('| operasi | hasil operasi |');
+writeln('---------------------------');
+writeln('| ',i,' + ',j,'   | ',(i+j):6,'        |');
+writeln('| ',i,' - ',j,'   | ',(i-j):6,'        |');
+writeln('| ',i,' * ',j,'   | ',(i*j):6,'        |');
+writeln('| ',i,' div ',j,' | ',(i div j):6,'        |');
+writeln('| ',i,' mod ',j,' | ',(i mod j):6,'        |');
+writeln('---------------------------');
+readkey;
+end.
